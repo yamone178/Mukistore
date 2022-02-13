@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .blog-section{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blog-box{
+            position: relative;
+            background: pink;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .blog-box::before{
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 140% ;
+            background: linear-gradient(#00ccff, #c0c3ff,#7411D4FF);
+            z-index: 1;
+            animation: animate 4s linear infinite;
+        }
+        .blog-box::after{
+            content: '';
+            position: absolute;
+            inset: 5px;
+            background: #1f3d5c;
+            z-index: 11;
+        }
+        @keyframes animate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(350deg);
+            }
+            
+        }
+        .blog-box .card{
+            position: relative;
+            text-align: center;
+            width: 280px;
+            background: transparent;
+            z-index: 12;
+            display: flex;
+            align-items: center;
+            border: 0;
+
+        }
+        .blog-box:hover{
+            background: #3b20bf;
+        }
+    </style>
+</head>
+
+<body>
+<div class="blog-section">
+    <div class="blog-box">
+        <div class="card">
+
+                <img src="./images/a3.jpg" alt="" class="w-50" >
+                <div class="card-body">
+                    <p class="text-white">Lorem ipsum dolor sit amet,olorumpossimus praesentium quas quod repellat, totam veritatis voluptates voluptatum!
+                    </p>
+                </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

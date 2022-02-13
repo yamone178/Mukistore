@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background: cornflowerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            position: relative;
+            width: 800px;
+            height: 100vh;
+            border-radius: 20px;
+
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+
+            /*background-color: #fff;*/
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            filter: blur(4px);
+            background: #d1ebff;
+            border-radius: 20px;
+
+        }
+        .swiper-slide-active{
+            transition: 0.5s;
+            filter: blur(0px);
+            background-image: linear-gradient(to right top, #e1178a, #d91d99, #cf26a9, #c231b8, #b13cc6, #ae3eca, #ab40cf, #a742d3, #b43bcf, #c033ca, #cb2ac5, #d61dbf);
+
+        }
+        .swiper-slide-active .testimonialBox .content p {
+            color: #fff;
+        }
+
+        /*.swiper-slide-active*/
+      /* .swiper-slide-active:hover {*/
+      /*      transform: translateY(-35px);*/
+      /*  }*/
+      /*.swiper-slide-active:hover .testimonialBox .layer{*/
+      /*      top: 0px;*/
+      /*      z-index: -1;*/
+
+      /*  }*/
+
+        .testimonialBox{
+            position: relative;
+            max-width: 100%;
+            padding: 40px;
+            padding-top: 90px;
+            color: #999;
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+        .testimonialBox .layer{
+            position: absolute;
+            top: calc(100% - 5px);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        .testimonialBox .content{
+            padding: 10px 0px;
+        }
+        .testimonialBox .content p{
+            width: 250px;
+        }
+        .testimonialBox .details{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .testimonialBox .details .imgBox{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        .testimonialBox .details .imgBox img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }.testimonialBox .details h3{
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #2196f3;
+            line-height: 1.1em;
+                 }
+
+        .swiper-3d .swiper-slide-shadow-left{
+
+        }
+        .swiper-3d .swiper-slide-shadow-right{
+            background-image: none;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" >
+
+                <div class="testimonialBox">
+                    <div class="layer"></div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut autem dignissimos dolorem ea eius, ex expedita hic ipsa, labore libero natus, nobis possimus quaerat sequi tempore totam voluptates voluptatibus.
+                        </p>
+                        <div class="details">
+                            <div class="imgBox">
+                                <img src="./images/user1.jpg" alt="">
+                            </div>
+                            <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" >
+
+                <div class="testimonialBox">
+                    <div class="layer"></div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut autem dignissimos dolorem ea eius, ex expedita hic ipsa, labore libero natus, nobis possimus quaerat sequi tempore totam voluptates voluptatibus.
+                        </p>
+                        <div class="details">
+                            <div class="imgBox">
+                                <img src="./images/user1.jpg" alt="">
+                            </div>
+                            <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" >
+
+                <div class="testimonialBox">
+                    <div class="layer"></div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut autem dignissimos dolorem ea eius, ex expedita hic ipsa, labore libero natus, nobis possimus quaerat sequi tempore totam voluptates voluptatibus.
+                        </p>
+                        <div class="details">
+                            <div class="imgBox">
+                                <img src="./images/user1.jpg" alt="">
+                            </div>
+                            <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.mySwiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop:true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+</body>
+</html>
