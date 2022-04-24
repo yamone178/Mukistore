@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assest/css/app.css">
-    <title>Document</title>
+    <title>Muki</title>
 </head>
 <body>
 <!--<div class="preloaderdiv">-->
@@ -22,6 +22,23 @@
         <nav class="navbar navbar-expand-lg navbar-light  shadow-sm px-4 position-fixed w-100 bg-primary  ">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bolder fs-4" href="#">Muki</a>
+                <div class="ms-auto d-block d-md-block d-lg-none ">
+
+                    <ul class="navbar-nav me-auto mt-sm-3 mt-md-3 mt-lg-0 mt-xl-0">
+                        <li class="nav-item ">
+
+                            <button class="btn  position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fas fa-cart-plus d-flex justify-content-around align-items-center">
+                                    <p class="badge bg-dark position-absolute  top-50 start-25 translate-middle  cartBadge align-text-top ">0</p>
+                                </i>
+
+                                <!--                                        <i class="fas fa-cart-plus"></i> <span class="position-absolute top-0 cartBadge start-100 translate-middle badge rounded-pill bg-secondary">0</span>-->
+
+                            </button>
+
+                        </li>
+                    </ul>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -57,9 +74,32 @@
 <!--                               myCart-->
 <!--                           </li>-->
 <!--                       </ul>-->
+
+
                    </div>
+                    <div class="ms-auto d-none d-md-none d-lg-block ">
+
+                        <ul class="navbar-nav me-auto mt-sm-3 mt-md-3 mt-lg-0 mt-xl-0">
+                            <li class="nav-item ">
+
+                                <button class="btn  position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fas fa-cart-plus d-flex justify-content-around align-items-center">
+                                        <p class="badge bg-dark position-absolute  top-0 start-100 translate-middle  cartBadge-lg align-text-top ">0</p>
+                                    </i>
+
+                                    <!--                                        <i class="fas fa-cart-plus"></i> <span class="position-absolute top-0 cartBadge start-100 translate-middle badge rounded-pill bg-secondary">0</span>-->
+
+                                </button>
+
+                            </li>
+                        </ul>
+                    </div>
+
+
 
                 </div>
+
+
             </div>
         </nav>
 
@@ -71,7 +111,7 @@
                 </div>
                 <div class="carousel-inner bg-primary">
                     <div class="carousel-item active">
-                        <div class=" bg-primary p-5">
+                        <div class=" bg-primary p-5 my-4">
 
                             <div class="container mt-4">
                                 <div class="row">
@@ -94,7 +134,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-3 col-lg-4">
-                                                <button class="btn btn-outline-dark text-end wow animate__bounceIn">Shop Now</button>
+                                                <a class="btn btn-outline-dark text-end wow animate__bounceIn" href="#new-product">Shop Now</a>
 
                                             </div>
                                         </div>
@@ -109,12 +149,12 @@
                         </div>
                     </div>
                     <div class="carousel-item ">
-                        <div class=" bg-primary p-5">
+                        <div class=" bg-primary p-5 my-4">
 
                             <div class="container mt-4">
                                 <div class="row carousel2">
 
-                                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center ">
 
                                         <div class="row justify-content-center align-items-center text-end">
                                             <div class="col-12 col-lg-10 ">
@@ -163,54 +203,6 @@
 
 
 
-        <!--        <div class="container-fluid home-page px-4 pt-5">-->
-
-<!--            <div class="row position-relative ">-->
-<!--                <div class="bg-image">-->
-<!--                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">-->
-<!--                        <div class="carousel-inner ">-->
-<!--                            <div class="carousel-item active">-->
-<!--                                <img src="./images/banner22.jpg" class="d-block w-100 home-img" alt="...">-->
-<!--                                <div class="home-content w-50">-->
-<!--                                    <span class="home-span ">New Collections</span>-->
-<!--                                    <h2 class="mb-3 fw-bolder">MUKI In Your Area!</h2>-->
-<!--                                    <p class="text-black-50">Style is a way to say who you are withour having to speak</p>-->
-<!--                                    <button class="btn   btn-sm btn-outline-secondary mt-sm-0 mt-md-2 mt-lg-3">Shop Now</button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="carousel-item  ">-->
-<!--                                <img src="./images/banner23.jpg" class="d-block w-100 home-img" alt="...">-->
-<!--                                <div class="home-content w-50">-->
-<!--                                    <span class="home-span ">New Collections</span>-->
-<!--                                    <h2 class="mb-3 fw-bolder">MUKI In Your Area!</h2>-->
-<!--                                    <p class="text-black-50">Lorem ipsum dolor sit amet, dignissimos eaque, impedit vel.</p>-->
-<!--                                    <button class="btn btn-sm btn-lg  btn-outline-secondary mt-sm-0 mt-md-2 mt-lg-3">Shop Now</button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-<!--                        </div>-->
-<!--                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">-->
-<!--                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                            <span class="visually-hidden">Previous</span>-->
-<!--                        </button>-->
-<!--                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">-->
-<!--                            <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                            <span class="visually-hidden">Next</span>-->
-<!--                        </button>-->
-<!--                    </div>-->
-
-<!--                    <div class="social position-absolute">-->
-<!--                        &lt;!&ndash;                <p class="text-primary fs-5">Follow</p>&ndash;&gt;-->
-<!--                        <a href="" class="d-inline-block mb-sm-3  mb-lg-5"><i class="fab  fa-facebook "></i></a><br>-->
-<!--                        <a href="" class="d-inline-block mb-sm-3 mb-lg-5"><i class="fab  fa-twitter"></i></a><br>-->
-<!--                        <a href=""><i class="fab fa-instagram "></i></a><br>-->
-
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
 
         <section class="p-0">
 
@@ -228,16 +220,16 @@
 
                         <nav class="mt-5">
                             <div class="nav nav-tabs d-flex flex-nowrap justify-content-center" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Top</button>
-                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Dress</button>
-                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Jeans & Pants</button>
+                                <button class="nav-link active nav_tab" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Top</button>
+                                <button class="nav-link nav_tab" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Dress</button>
+                                <button class="nav-link nav_tab" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Jeans & Pants</button>
                             </div>
                         </nav>
                         <div class="tab-content " id="nav-tabContent">
-                            <div class="tab-pane  wow animate__zoomIn  overflow-hidden show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="tab-pane nav_tab_body fade wow animate__zoomIn overflow-hidden show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
                                 <div class="container-fluid mt-4 ">
-                                    <div class="row    " id="new-arrival" >
+                                    <div class="row   " id="new-arrival" >
 
 
 
@@ -246,10 +238,10 @@
 
 
                             </div>
-                            <div class="tab-pane wow animate__zoomIn  overflow-hidden" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="tab-pane nav_tab_body fade overflow-hidden" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 
                                 <div class="container-fluid mt-4 ">
-                                    <div class="row " id="dress" >
+                                    <div class="row" id="dress" >
 
 
 
@@ -257,7 +249,7 @@
                                 </div>
 
                             </div>
-                            <div class="tab-pane wow animate__zoomIn  overflow-hidden" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="tab-pane nav_tab_body fade overflow-hidden" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                                 <div class="container-fluid mt-4">
                                     <div class="row " id="jean" >
 
@@ -279,33 +271,33 @@
 <!--                    </div>-->
                 </div>
             </section>
-            <section class="section-4 m-0 p-0 bg-primary">
+            <section class="section-4 m-0 p-0 pt-5 bg-primary">
                <div class="container">
                    <div class="row justify-content-center p-4 ">
-                       <div class="col-12 col-md-6   col-lg-3 mb-3 ms-3 poster1 bg-primary">
-                           <div class=" d-flex justify-content-center align-items-center  p-3">
+                       <div class="col-12 col-md-6   col-lg-3 mb-3 ms-3 poster1 bg-primary wow animate__flipInX animate__faster">
+                           <div class=" d-flex justify-content-center align-items-center   p-3">
                                <img src="./images/sweater-poster.png" alt="" class="poster1-img w-50 pt-3 ">
                                <div>
-                                   <h3 class="fw-bolder text-secondary">Sweater <br><span class="">Collections</span></h3>
-                                   <button type="button" class="btn btn-outline-secondary mt-3">Shop>></button>
+                                   <h3 class="fw-bolder text-black">Sweater <br><span class="">Collections</span></h3>
+                                   <button type="button" class="btn btn-outline-dark mt-3">Shop >></button>
                                </div>
                            </div>
                        </div>
-                       <div class="col-12 col-md-6   col-lg-3 mb-3 ms-3 poster1 m  mx-lg-3 bg-primary ">
+                       <div class="col-12 col-md-6   col-lg-3 mb-3 ms-3 poster1 m  mx-lg-3 bg-primary wow animate__flipInX animate__fast ">
                            <div class=" d-flex justify-content-center align-items-center p-3 ">
                                <img src="./images/dress-poster.png" alt="" class="poster1-img w-50 ">
                                <div>
-                                   <h3 class="fw-bolder text-secondary">Sweater <br><span class="">Collections</span></h3>
-                                   <button type="button" class="btn btn-outline-secondary mt-3">Shop>></button>
+                                   <h3 class="fw-bolder text-black">Dress <br><span class="">Collections</span></h3>
+                                   <button type="button" class="btn btn-outline-dark mt-3">Shop >></button>
                                </div>
                            </div>
                        </div>
-                       <div class="col-12 col-md-6   col-lg-3 mb-3 ms-3 poster1 bg-primary px-3 ">
+                       <div class="col-12 col-md-6   col-lg-3 mb-3 ms-3 poster1 bg-primary px-3 wow animate__flipInX animate__slow ">
                            <div class=" d-flex justify-content-center align-items-center p-3 ">
                                <img src="./images/poster3.png" alt="" class="poster1-img w-50 ">
                                <div>
-                                   <h3 class="fw-bolder text-secondary"> <br><span class="">Up to 50%</span></h3>
-                                   <button type="button" class="btn btn-outline-secondary ">Shop>></button>
+                                   <h3 class="fw-bolder text-black"> <br><span class="">Up to 50%</span></h3>
+                                   <button type="button" class="btn btn-outline-dark ">Shop >></button>
                                </div>
                            </div>
                        </div>
@@ -331,13 +323,13 @@
 
                         <nav>
                             <div class="nav nav-tabs d-flex justify-content-center" id="nav-feature-tab" role="tablist">
-                                <button class="nav-link active" id="nav-feature-shirt-tab" data-bs-toggle="tab" data-bs-target="#nav-shirt" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Top</button>
-                                <button class="nav-link" id="nav-feature-dress-tab" data-bs-toggle="tab" data-bs-target="#nav-dress" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Dress</button>
-                                <button class="nav-link" id="nav-feature-jean-tab" data-bs-toggle="tab" data-bs-target="#nav-jean" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Jeans & Pants</button>
+                                <button class="nav-link active nav_tab" id="nav-feature-shirt-tab" data-bs-toggle="tab" data-bs-target="#nav-shirt" type="button" role="tab" aria-controls="nav-shirt" aria-selected="true">Top</button>
+                                <button class="nav-link nav_tab" id="nav-feature-dress-tab" data-bs-toggle="tab" data-bs-target="#nav-dress" type="button" role="tab" aria-controls="nav-dress" aria-selected="false">Dress</button>
+                                <button class="nav-link nav_tab" id="nav-feature-jean-tab" data-bs-toggle="tab" data-bs-target="#nav-jean" type="button" role="tab" aria-controls="nav-jean" aria-selected="false">Jeans & Pants</button>
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-feature-tabContent">
-                            <div class="tab-pane wow animate__zoomIn  overflow-hidden show active" id="nav-shirt" role="tabpanel" aria-labelledby="nav-feature-shirt-tab">
+                            <div class="tab-pane nav_tab_body fade wow animate__zoomIn  overflow-hidden show active" id="nav-shirt" role="tabpanel" aria-labelledby="nav-feature-shirt-tab">
 
                                 <div class="container-fluid mt-4 ">
                                     <div class="row " id="feature_shirt" >
@@ -349,7 +341,7 @@
 
 
                             </div>
-                            <div class="tab-pane wow animate__zoomIn  overflow-hidden" id="nav-dress" role="tabpanel" aria-labelledby="nav-feature-dress-tab">
+                            <div class="tab-pane nav_tab_body fade  overflow-hidden" id="nav-dress" role="tabpanel" aria-labelledby="nav-feature-dress-tab">
 
                                 <div class="container-fluid mt-4 ">
                                     <div class="row " id="feature_dress" >
@@ -360,7 +352,7 @@
                                 </div>
 
                             </div>
-                            <div class="tab-pane wow animate__zoomIn  overflow-hidden" id="nav-jean" role="tabpanel" aria-labelledby="nav-feature-jean-tab">
+                            <div class="tab-pane nav_tab_body fade  overflow-hidden" id="nav-jean" role="tabpanel" aria-labelledby="nav-feature-jean-tab">
                                 <div class="container-fluid mt-4 ">
                                     <div class="row " id="feature_jean" >
 
@@ -559,7 +551,7 @@
                                 </div>
                                 <p class="text-center fs-5 text-black-50 ">Subscribe and get notified at first on the latest updates and offers!</p>
 
-                                    <img src="./images/arrow2.png " alt="" class="w-50 arrow position-absolute wow animate__slideInDown animate__slower">
+                                    <img src="./images/arrow2.png " alt="" class="w-50 arrow position-absolute wow animate__slideInDown animate__slower d-none">
 
                             </div>
                         </div>
@@ -569,19 +561,20 @@
                            <div class="mailbox d-flex p-4 justify-content-center wow animate__slideInLeft align-items-center mt-4">
                                <div class="">
                                    <h5 class="mb-5">Our NewsLetter</h5>
-                                   <div class="inputBox mb-5">
-                                       <input type="text" required><span>Full Name</span>
 
+                                   <div class="form-floating mb-3">
+                                       <input type="text" class="form-control" id="name" placeholder="full Name">
+                                       <label for="name">Full Name</label>
                                    </div>
-                                   <div class="inputBox mb-5">
-                                       <input type="text" required><span>Email</span>
-
+                                   <div class="form-floating mb-3  ">
+                                       <input type="email" class="form-control" id="email" placeholder="Email">
+                                       <label for="email">Email</label>
                                    </div>
-
                                    <div class=" mb-5">
                                        <input type="button" class="mailButton" value="Subscribe">
 
                                    </div>
+
                                </div>
                            </div>
                         </div>
@@ -607,7 +600,12 @@
                             <div class=" links">
                                 <a class="text-decoration-none  fw-bold" href="#home">Home</a>
                                 <br><a class="text-decoration-none fw-bold" href="#new-product">New Product</a>
-                                <br><a class="text-decoration-none  fw-bold" href="#feature-product">featured product</a>
+                                <br><a class="text-decoration-none  fw-bold" href="#feature-product">Featured product</a>
+                                <br><a class="text-decoration-none  fw-bold" href="#feature-product">Featured product</a>
+                                <br><a class="text-decoration-none  fw-bold" href="#testimonial">Testimonial</a>
+                                <br><a class="text-decoration-none  fw-bold" href="#testimonial">Contact</a>
+
+
                                 <br>
                             </div>
                         </div>
@@ -657,7 +655,34 @@
 
         </section>
     </div>
+    <div class="offcanvas offcanvas-end mt-5 bg-primary"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header mt-4">
+            <h5 id="offcanvasRightLabel">Your Cart</h5>
+            <button type="button" class=" btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pb-0" >
+
+                <table class="table text-center">
+                    <tbody id="cart_body"></tbody>
+
+
+                </table>
+
+            <div class="row position-sticky bottom-0 p-2 text-center bg-primary">
+                <div class="col-6">
+                    <h3>Total</h3>
+                </div>
+                <div class="col-6">
+                    <h4 id="getTotal">0</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>
+
+
 
 
 
@@ -667,13 +692,8 @@
 
 <script src="./js/index.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="node_modules/typed.js/lib/typed.min.js"></script>
-<script src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/swiper/swiper-bundle.min.js"></script>
 <script src="node_modules/wow.js/dist/wow.min.js"></script>
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 
 
 <script>
@@ -738,22 +758,6 @@
 
 </script>
 <script>
-    $('.lazy').slick({
-        slidesToShow: 1,
-        slidesToScroll:1,
-        dots: true,
-
-        infinite:true,
-        autoplay:true,
-
-        verticalSwiping: true,
-        autoplaySpeed: 2000,
-        waitForAnimate: false,
-        waitForTransition: true,
-       lazyLoad: 'ondemand',
-        vertical:true,
-
-    });
 
 
 

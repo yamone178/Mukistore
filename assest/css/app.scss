@@ -14,12 +14,11 @@ $success:#f3d5ef;
 @import "../../node_modules/animate.css/animate.min.css";
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css";
-@import "../../node_modules/slick-carousel/slick/slick.css";
-@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Hind+Madurai&family=Irish+Grover&family=Kumbh+Sans:wght@400;600&family=Lato&family=Montserrat:wght@200;400;500;600;700&family=Neonderthaw&family=Oswald:wght@300&family=Patrick+Hand&family=Rajdhani:wght@600&family=Red+Hat+Display&family=Rubik&family=Sedgwick+Ave&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Hind+Madurai&family=Irish+Grover&family=Kumbh+Sans:wght@400;600&family=Lato&family=Montserrat:wght@200;400;500;600;700&family=Neonderthaw&family=Neucha&family=Oswald:wght@300&family=Patrick+Hand&family=Rajdhani:wght@600&family=Red+Hat+Display&family=Rubik&family=Sedgwick+Ave&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Hind+Madurai&family=Irish+Grover&family=Kumbh+Sans:wght@400;600&family=Lato&family=Montserrat:wght@200;400;500;600;700&family=Neonderthaw&family=Neucha&family=Oswald:wght@300&family=Patrick+Hand&family=Rajdhani:wght@600&family=Red+Hat+Display&family=Rubik&family=Sedgwick+Ave&display=swap');
 
 
 
@@ -768,6 +767,13 @@ color: #fff;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: 0.5s;
+}
+
+.thum-img:hover{
+  width: 42px;
+  height: 42px;
+  border: 2.3px solid white;
 }
 
 //blog section
@@ -1037,4 +1043,24 @@ color: var(--primary-one);
   background-image: linear-gradient(to right top, #f246a8, #f343b4, #f342c0, #f141cd, #ee43db, #ee4be1, #ee53e8, #ee5aee, #f367ee, #f774ef, #fb80ef, #ff8cf0);  border-radius: 6px;
 
   box-shadow: var(--shadow-primary);
+}
+
+.cart_img{
+  width: 100px;
+}
+#cart_body table tr *{
+  padding: 20px;
+}
+.total{
+  background-color: white;
+  position: sticky;
+  inset-block-end: 0;
+}
+.cartBadge{
+  position: relative !important;
+  top: -13px;
+}
+
+.start-25{
+  left: 25%;
 }
