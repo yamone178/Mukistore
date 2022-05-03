@@ -287,7 +287,7 @@ const dress_featureArray=[
         "id":5,
         "title":"floral dress",
         "price":13000,
-        "image5":["images/dressa1.jpg","images/dressa2.jpg"],
+        "image5":["images/dresse1.jpg","images/dresse2.jpg"],
         "description":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum",
         "size5":["S","M","L"]
 
