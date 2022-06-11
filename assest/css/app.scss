@@ -5,6 +5,7 @@ $font-family-monospace:'Montserrat', sans-serif;
 $font-family-sans-serif : 'Neucha', cursive;
 $success:#f3d5ef;
 
+
 @import "../../node_modules/bootswatch/dist/journal/variables";
 @import "../../node_modules/bootswatch/dist/journal/bootswatch";
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -487,7 +488,7 @@ from{
 //testimonial Box
 
 .section-six{
-  height: 100vh;
+
   //background: var(--primary-two);
 }
 .testimonialDiv {

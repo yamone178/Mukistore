@@ -608,6 +608,7 @@ let cartBody=document.getElementById("cart_body");
 let total=document.getElementById('getTotal');
 let cartBtn_icon=document.querySelectorAll(".Cart-btn-icon");
 let plusCart= document.querySelectorAll('.plusCart');
+
 cartBtn_icon.forEach(cart_btn_icon=>{
     cart_btn_icon.addEventListener('click',function (e){
 
@@ -639,26 +640,8 @@ cartBtn_icon.forEach(cart_btn_icon=>{
                     </td>
                 <td class="cart-price align-middle">${item_price}</td>
                 <td class="align-middle"><i class="fas fa-trash text-danger fa-fw trash_btn"></i></td>
-            </tr>
-        
-            
-        `
+            </tr>  `
         total.innerHTML=prices.reduce((x,y)=>(Number(x)+Number(y)))
-
-// let allquantity=document.querySelectorAll('.quantity');
-//         for (let x=0; x<allquantity.length;x++){
-//             let input=allquantity[x];
-//             input.addEventListener('change',changeQuantity);
-//         }
-//
-//         function changeQuantity(event){
-//             let input=event.target;
-//             if (isNaN(input.value) || input.value<=0){
-//                 input.value=1;
-//             }
-//             updatePrice();
-//         }
-
 
 
         let cartRow= document.querySelectorAll('.cart-row');
@@ -715,14 +698,8 @@ function updatePrice(){
 
 }
 
-// function cartPlus(){
-//     let count=parseInt(document.querySelector('.cartBadge').innerHTML);
-//     count=++count;
-//     console.log(count);
-//     return count;
-//
-// }
 
+//for model box
 
     let modalCarts=document.querySelectorAll('.modal-cartBtn-icon');
     modalCarts.forEach(modalCart=> {
@@ -780,20 +757,6 @@ plusCart.forEach(function (cartPlus){
 })
 
 
-//add animation to tab
-
-// let navTabs=document.querySelectorAll('.nav_tab');
-//     let navTabBody= document.querySelectorAll('.nav_tab_body');
-//
-//     let index=0;
-//
-//         for (let x=0; x<navTabs.length; x++){
-//             navTabs[x].addEventListener('click',function (){
-//                 console.log(navTabs[x])
-//                 navTabBody[x].classList.add('animate__zoomIn');
-//                 console.log(navTabBody[x]);
-//             })
-//         }
 
 
         //remove toggoler
@@ -805,6 +768,3 @@ plusCart.forEach(function (cartPlus){
                 collapse.classList.remove('show');
             })
         })
-
-//
-
